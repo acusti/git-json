@@ -18,7 +18,7 @@ example
     git.commit('My first commit')
 
     // stage
-    git.add('mydocument',obj)
+    git.add('mydocument')
     
     // now this works
     git.commit('My first commit')
