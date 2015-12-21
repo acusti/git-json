@@ -5,15 +5,16 @@ git-json
 example
 =======
 
-    var git = require('git-json')
+    var gitjson = require('git-json')
     
+    var git = gitjson()
+
     git.init()
-
-    git.add(obj)
-
+    git.add({foo:'bar'})
     git.commit()
-
-    git.pull()
+    console.log(git.log())
+    var data = git.pull()
+      // data = {foo:'bar'}
 
 
 

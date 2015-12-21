@@ -1,0 +1,29 @@
+{
+  "name": "git-json",
+  "version": "1.0.0",
+  "description": "git-json ========",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "ansicolors": "^0.3.2",
+    "fast-json-patch": "^0.5.4",
+    "hashish": "0.0.4",
+    "uuid": "^2.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rook2pawn/git-json.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rook2pawn/git-json/issues"
+  },
+  "homepage": "https://github.com/rook2pawn/git-json#readme"
+}
