@@ -6,15 +6,23 @@ example
 =======
 
     var gitjson = require('git-json')
-    
     var git = gitjson()
 
     git.init()
-    git.add({foo:'bar'})
-    git.commit()
-    console.log(git.log())
-    var data = git.pull()
-      // data = {foo:'bar'}
+    var obj = {foo:'bar', val:5}
+    
+    // save in working
+    git.save(obj)
+
+    // nothing staged, so commit does nothing
+    git.commit('My first commit')
+
+    // stage
+    git.add(obj)
+    
+    // now this works
+    git.commit('My first commit')
+    git.log()
 
 
 
