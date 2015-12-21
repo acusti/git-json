@@ -12,13 +12,13 @@ example
     var obj = {foo:'bar', val:5}
     
     // save in working
-    git.save(obj)
+    git.save('mydocument',obj)
 
     // nothing staged, so commit does nothing
     git.commit('My first commit')
 
     // stage
-    git.add(obj)
+    git.add('mydocument',obj)
     
     // now this works
     git.commit('My first commit')
@@ -58,3 +58,10 @@ HEAD
 ====
     
     Points to a commit of the last checked out state
+
+
+TODO
+====
+
+Error responses and method
+Streaming interfaces

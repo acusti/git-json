@@ -1,4 +1,3 @@
-var jsonpatch = require('fast-json-patch')
 var lib = require('./lib')
 var gitjson = function() {
 
@@ -8,9 +7,9 @@ var gitjson = function() {
   this.commits = []
 
   //jsonpatch stuff
-  this.repository = []
-  this.staging = []
-  this.working = []
+  this.repository = {}
+  this.staging = {}
+  this.working = {}
 
   // API
   this.init = lib.init  
@@ -19,6 +18,9 @@ var gitjson = function() {
   this.merge = lib.merge
   this.branch = lib.branch
   this.log = lib.log
+
+  // API - other
+  this.save = lib.save
 }
 module.exports = exports = function() {
   return new gitjson
