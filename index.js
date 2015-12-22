@@ -4,7 +4,7 @@ var gitjson = function() {
   // internals
   this.refs = {}
   this.HEAD = null;
-  this.commits = []
+  this.commits = {}
 
   //jsonpatch stuff
   this.repository = {}
