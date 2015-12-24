@@ -26,6 +26,7 @@ var gitjson = function() {
 
   // API - other
   this.save = lib.save
+  this.ancestor = lib.ancestor
 }
 module.exports = exports = function() {
   return new gitjson

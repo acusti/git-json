@@ -57,13 +57,14 @@ Returns the contents at the tip of branchname
 .merge(branchname)
 ==================
 
-Peforms a fast forward merge  (three way non-ff merge coming)
+Peforms a fast forward merge  (three way non-ff merge coming).
+Supports detached merges as well.
 
 
 .ancestor(branchname)
 =====================
 
-Prints the common ancestor of current and branchname
+Returns true if branchname is ancestor of current branch i.e. current branch tip is upstream of branchname
 
 
 .rebase(branchname)
