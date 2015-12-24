@@ -5,6 +5,8 @@ var gitjson = function() {
   this.refs = {}
   this.HEAD = null;
   this.commits = {}
+  this.trees = {}
+  this.logs = []
 
   //jsonpatch stuff
   this.repository = {}
