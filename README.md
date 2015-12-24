@@ -57,10 +57,23 @@ Returns the contents at the tip of branchname
 .merge(branchname)
 ==================
 
-Peforms a fast forward merge and replays the common ancestor of branchname and current branch 
+Peforms a fast forward merge  (three way non-ff merge coming)
+
+
+.ancestor(branchname)
+=====================
+
+Prints the common ancestor of current and branchname
 
 
 .rebase(branchname)
 ===================
 
 Rewinds head to tip of branchname and then rewrites / replays through to tip of current branh.
+
+
+
+Thanks
+======
+
+#git on freenode. 
