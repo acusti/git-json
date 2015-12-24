@@ -6,6 +6,7 @@ var obj = {foo:'bar',val:'5'}
 git.save('mydocument',obj)
 git.add('mydocument')
 git.commit('first commit')
+
 git.log()
 
 
@@ -19,6 +20,7 @@ git.commit('second commit')
 // now it works
 
 git.log()
+
 /*
 commit e89ee1cd307bb9c10a78ef1a6949a7f2635cd09c (master,HEAD)
 Author: David Wee <rook2pawn@gmail.com> 1450796299 -0800
@@ -35,7 +37,22 @@ Date: Wed Dec 23 2015 18:30:08 GMT-0800 (PST)
 var obj2 = git.checkout()
 console.log("obj2:", obj2)
 
+
+
 git.branch('baz')
-//git.checkout('baz')
+
+
+git.checkout('baz')
+
 git.log()
-console.log(git.refs)
+
+obj2['mydocument'].val = 7
+console.log(obj2)
+git.save(obj2['mydocument'])
+git.add('mydocument')
+git.commit("setting val to 7")
+
+console.log("HEAD:", git.HEAD, "REFS:", git.refs)
+process.exit()
+
+git.checkout('master')
