@@ -20,7 +20,7 @@
     "type": "git",
     "url": "git+https://github.com/rook2pawn/git-json.git"
   },
-  "author": "",
+  "author": "David Wee <rook2pawn@gmail.com> (http://rook2pawn.com)",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/rook2pawn/git-json/issues"
