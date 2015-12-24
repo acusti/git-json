@@ -13,4 +13,4 @@ git.add('mydocument')
 git.commit('added one to val to make it 3')
 
 git.log()
-//git.merge('master')
+git.merge('master')
