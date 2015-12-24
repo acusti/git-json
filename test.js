@@ -36,3 +36,8 @@ var obj2 = git.checkout()
 console.log("obj2:", obj2)
 var obj3 = git.checkout('a56c7219c997d717b3ca9bdf859761d2895b64ea')
 console.log("obj3:", obj3)
+git.log()
+
+git.branch('baz')
+//git.checkout('baz')
+git.log()

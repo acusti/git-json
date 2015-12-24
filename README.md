@@ -82,5 +82,12 @@ HEAD
 TODO
 ====
 
+
+checkout for specific documents
+
 Error responses and method
-Streaming interfaces
+
+Streaming interfaces for logs/api, async interface for actual db
+
+
+

@@ -7,6 +7,7 @@ var gitjson = function() {
   this.commits = {}
   this.trees = {}
   this.logs = []
+  this.branches = {}
 
   //jsonpatch stuff
   this.repository = {}
