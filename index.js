@@ -22,6 +22,7 @@ var gitjson = function() {
   this.branch = lib.branch
   this.log = lib.log
   this.checkout = lib.checkout
+  this.merge = lib.merge
 
   // API - other
   this.save = lib.save
