@@ -12,6 +12,11 @@ git-json
     git.commit('first commit')
     git.log()
 
+.log()
+======
+
+Produces a git log similar to git log --all --decorate
+
 ![Git-json Log Image]
 (http://i.imgur.com/dQGB61Y.png)
 
