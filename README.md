@@ -73,6 +73,15 @@ Returns true if branchname is ancestor of current branch i.e. current branch tip
 Rewinds head to tip of branchname and then rewrites / replays through to tip of current branh.
 
 
+---
+
+## Other useful functions ###
+##### .branch()
+
+Returns the list of all branches and indicates which branch you are on.
+
+
+
 
 Thanks
 ======

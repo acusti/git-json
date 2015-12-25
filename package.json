@@ -9,8 +9,7 @@
   "dependencies": {
     "ansicolors": "^0.3.2",
     "fast-json-patch": "^0.5.4",
-    "hashish": "0.0.4",
-    "uuid": "^2.0.1"
+    "hashish": "0.0.4"
   },
   "devDependencies": {},
   "scripts": {
