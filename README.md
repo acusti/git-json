@@ -35,7 +35,7 @@ Places "file" name into the staging index.
 
 
 .commit(message)
-=========
+================
 
 Peforms a commit with message
 

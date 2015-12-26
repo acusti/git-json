@@ -7,9 +7,11 @@ var git = gitjson()
   git.add('mydocument')
   git.commit('first commit')
 
-  git.save('plans', {baz:3})
+  git.save('plans', {baz:false})
   git.add('plans')
-  git.commit('added plans')
+  git.save('mydocument', {foo:'bar',val:4})
+  git.add('mydocument')
+  git.commit('added plans, modified mydocument to val is 4')
 
   git.branch('test')
   git.checkout('test')
@@ -27,10 +29,10 @@ var git = gitjson()
   var obj = git.checkout('master')
   console.log(obj)
   obj.mydocument.val = 99
-  git.save('mydocument',obj)
+  git.save('mydocument',obj.mydocument)
   git.add('mydocument')
   git.commit('commit to master val 99')
-
+process.exit()
   git.log()
 /*
   assert.equal(false,git.ancestor('test'))
