@@ -1,4 +1,5 @@
 var lib = require('./lib')
+var treelib = require('treelib')
 var gitjson = function() {
 
   // internals
@@ -31,11 +32,3 @@ var gitjson = function() {
 module.exports = exports = function() {
   return new gitjson
 }
-/*
-
-var objA = {user: {firstName: "Albert", lastName: "Einstein"}};
-var objB = {user: {firstName: "Albert", lastName: "Collins"}};
-var diff = jsonpatch.compare(objA, objB)
-console.log(diff)
-//diff == [{op: "replace", path: "/user/lastName", value: "Collins"}]
-*/
