@@ -2,7 +2,7 @@ var test = require('tape')
 var gitjson = require('../index.js')
 var git = gitjson()
 
-test('merge fastforward test',function(assert) {
+test('branch with no arguments, no test just visual inspection', function(assert) {
 assert.plan(1)
 git.init()
 git.save('mydocument', {foo:'bar', val:2})
@@ -16,9 +16,9 @@ git.add('mydocument')
 git.commit('added one to val to make it 3')
 
 git.log()
-//assert.equal(true,git.ancestor('master'))
-console.log(git.ancestor('master'))
-git.merge('master')
-git.log()
-assert.equal(git.refs['test'], git.refs['master'])
+assert.comment("Visually inspect the branch command with no arguments produces a master and test with test marked active branch")
+var x = git.branch()
+assert.comment(x)
+assert.pass("Manual pass")
+assert.end()
 })

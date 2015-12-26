@@ -1,7 +1,9 @@
+var test = require('tape')
 var gitjson = require('../index.js')
-var assert = require('assert')
 var git = gitjson()
 
+test('checkout with no arguments restores working directory',function(assert) {
+assert.plan(1)
 git.init()
 git.save('mydocument', {foo:'bar', val:2})
 git.add('mydocument')
@@ -20,3 +22,4 @@ git.log()
 
 // this test is for checkout without arguments after named checkout
 
+})

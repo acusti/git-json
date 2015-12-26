@@ -1,7 +1,9 @@
-var gitjson = require('../index.js')
-var assert = require('assert')
-var git = gitjson()
+var test = require('tape')
 
+test('branch with checkout test',function(assert) {
+var gitjson = require('../index.js')
+var git = gitjson()
+assert.plan(1)
 git.init()
 git.save('mydocument', {foo:'bar', val:2})
 git.add('mydocument')
@@ -17,6 +19,7 @@ git.commit('added one to val to make it 3')
 var obj = git.checkout('test')
 assert.equal(obj['mydocument'].val, 3)
 git.log()
+})
 
 
 // repeat in git

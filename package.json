@@ -8,12 +8,18 @@
   },
   "dependencies": {
     "ansicolors": "^0.3.2",
+    "deep-equal": "^1.0.1",
     "fast-json-patch": "^0.5.4",
-    "hashish": "0.0.4"
+    "hashish": "0.0.4",
+    "lodash": "^3.10.1",
+    "treelib": "0.0.9"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "faucet": "0.0.1",
+    "tape": "^4.4.0"
+  },
   "scripts": {
-    "test": "node test/test*.js"
+    "test": "tape test/test*.js | faucet"
   },
   "repository": {
     "type": "git",
