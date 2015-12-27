@@ -27,8 +27,7 @@ This chart summarizes the functions you will use in working vs staging.
 
 Produces a git log similar to git log --all --decorate
 
-![Git-json Log Image]
-(http://i.imgur.com/dQGB61Y.png)
+![Git-json Log Image](http://i.imgur.com/dQGB61Y.png)
 
 
 
@@ -108,7 +107,18 @@ Sets the git configuration. Typical use is
 Returns the list of all branches and indicates which branch you are on.
 
 
+Contributions
+=============
 
+Please contribute, as I actively monitor discussions and pull requests. Note the TODO list
+
+TODO
+====
+
+![Pencil Todo](http://i.imgur.com/7cCiqun.png) git remove
+![Pencil Todo](http://i.imgur.com/7cCiqun.png) treelib with commit hashes for visualizations
+![Pencil Todo](http://i.imgur.com/7cCiqun.png) NonFF merge
+![Pencil Todo](http://i.imgur.com/7cCiqun.png) git rebase
 
 Thanks
 ======
