@@ -12,10 +12,16 @@ git-json
     git.commit('first commit')
     git.log()
 
+
+This chart summarizes the functions you will use in working vs staging.
+
+your new working and staging functions
+======================================
+
 |      | Working | Staging |
 |------|---------|---------|
-|![disk](http://i.imgur.com/CZO14tR.png)| .save | .add |
-|![trash](http://i.imgur.com/osgHYPP.png) | .delete | .remove |
+|![save](http://i.imgur.com/osgHYPP.png) | .save | .add |
+|![trash](http://i.imgur.com/CZO14tR.png)| .delete | .remove |
 
 .log()
 ======
@@ -92,3 +98,5 @@ Thanks
 ======
 
 \#git on freenode. 
+trash icon provided by http://www.aspneticons.com/
+Disk icon provided by  http://www.aha-soft.com
