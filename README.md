@@ -43,6 +43,16 @@ Save content under "file" name into the working directory
 
 Places "file" name into the staging index.
 
+.delete(name)
+=============
+
+Delete content under "file" name from the working directory
+
+.remove(name)
+=============
+
+Issues a Remove "file" name order into the staging index
+
 
 .commit(message)
 ================

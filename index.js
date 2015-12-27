@@ -17,7 +17,10 @@ var gitjson = function() {
 
   // API
   this.init = lib.init  
+  this.save = lib.save
   this.add = lib.add
+  this.delete = lib.delete
+  this.remove = lib.remove
   this.commit = lib.commit
   this.merge = lib.merge
   this.branch = lib.branch
@@ -26,7 +29,6 @@ var gitjson = function() {
   this.merge = lib.merge
 
   // API - other
-  this.save = lib.save
   this.ancestor = lib.ancestor
   this.walkback = lib.walkback
 }
