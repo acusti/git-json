@@ -6,6 +6,7 @@ var gitjson = function() {
   this.refs = {}
   this.HEAD = null;
   this.commits = {}
+  this.blobs = {}
   this.trees = {}
   this.logs = []
   this.branches = {}
