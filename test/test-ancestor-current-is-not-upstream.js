@@ -15,15 +15,16 @@ test('is not upstream',function(assert) {
   git.add('mydocument')
   git.commit('added one to val to make it 3')
 
-  git.log()
+  git.save('mydocument',{foo:'bar',val:4})
+  git.add('mydocument')
+  git.commit('added one to val to make it 4')
 
   var obj = git.checkout('master')
   obj.mydocument.val = 99
-  git.save('mydocument',obj)
+  git.save('mydocument',obj.mydocument)
   git.add('mydocument')
   git.commit('commit to master val 99')
 
-  git.log()
   assert.equal(false,git.ancestor('test'))
   assert.equal(true,git.ancestor('master'))
 })
