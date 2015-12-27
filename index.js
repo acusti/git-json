@@ -9,6 +9,7 @@ var gitjson = function() {
   this.trees = {}
   this.logs = []
   this.branches = {}
+  this._config = {user:{name:'Foo Bar',email:'foo@bar.com'}}
 
   //jsonpatch stuff
   this.repository = {}
@@ -29,6 +30,7 @@ var gitjson = function() {
   this.merge = lib.merge
 
   // API - other
+  this.config = lib.config
   this.ancestor = lib.ancestor
   this.walkback = lib.walkback
 }

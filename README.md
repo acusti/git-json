@@ -96,6 +96,13 @@ Rewinds head to tip of branchname and then rewrites / replays through to tip of 
 ---
 
 ## Other useful functions ###
+
+##### .config(obj)
+
+Sets the git configuration. Typical use is 
+
+    git.config({user:{email:'joe@bar.com',name:'Joe Bar'}})
+
 ##### .branch()
 
 Returns the list of all branches and indicates which branch you are on.
