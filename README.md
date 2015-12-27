@@ -13,10 +13,9 @@ git-json
     git.log()
 
 
-This chart summarizes the functions you will use in working vs staging.
-
 your new working and staging functions
 ======================================
+This chart summarizes the functions you will use in working vs staging.
 
 |      | Working | Staging |
 |------|---------|---------|
