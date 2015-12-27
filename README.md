@@ -115,10 +115,10 @@ Please contribute, as I actively monitor discussions and pull requests. Note the
 TODO
 ====
 
-![Pencil Todo](http://i.imgur.com/7cCiqun.png) git remove
-![Pencil Todo](http://i.imgur.com/7cCiqun.png) treelib with commit hashes for visualizations
-![Pencil Todo](http://i.imgur.com/7cCiqun.png) NonFF merge
-![Pencil Todo](http://i.imgur.com/7cCiqun.png) git rebase
+![Pencil Todo](http://i.imgur.com/7cCiqun.png) git remove  
+![Pencil Todo](http://i.imgur.com/7cCiqun.png) treelib with commit hashes for visualizations  
+![Pencil Todo](http://i.imgur.com/7cCiqun.png) NonFF merge  
+![Pencil Todo](http://i.imgur.com/7cCiqun.png) git rebase  
 
 Thanks
 ======
