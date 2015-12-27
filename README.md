@@ -19,8 +19,8 @@ This chart summarizes the functions you will use in working vs staging.
 
 |      | Working | Staging |
 |------|---------|---------|
-|![save](http://i.imgur.com/osgHYPP.png) | .save | .add |
-|![trash](http://i.imgur.com/CZO14tR.png)| .delete | .remove |
+|![save](http://i.imgur.com/osgHYPP.png) | **.save** | **.add** |
+|![trash](http://i.imgur.com/CZO14tR.png)| **.delete** | **.remove** |
 
 .log()
 ======
@@ -99,3 +99,8 @@ Thanks
 \#git on freenode. 
 trash icon provided by http://www.aspneticons.com/
 Disk icon provided by  http://www.aha-soft.com
+
+Copyright (C) 2016 David Wee
+
+License MIT
+
