@@ -12,6 +12,11 @@ git-json
     git.commit('first commit')
     git.log()
 
+|      | Working | Staging |
+|------|---------|---------|
+|![disk](http://i.imgur.com/CZO14tR.png)| .save | .add |
+|![trash](http://i.imgur.com/osgHYPP.png) | .delete | .remove |
+
 .log()
 ======
 
@@ -64,7 +69,7 @@ Supports detached merges as well.
 .ancestor(branchname)
 =====================
 
-Returns true if branchname is ancestor of current branch i.e. current branch tip is upstream of branchname
+Returns true if current branch tip is upstream of branchname (i.e. "is branchname behind us"?)
 
 
 .rebase(branchname)
