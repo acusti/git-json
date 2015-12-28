@@ -12,6 +12,7 @@
     "fast-json-patch": "^0.5.4",
     "hashish": "0.0.4",
     "lodash": "^3.10.1",
+    "queuelib": "^1.0.6",
     "treelib": "0.0.9"
   },
   "devDependencies": {

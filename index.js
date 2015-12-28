@@ -13,6 +13,7 @@ var gitjson = function() {
   this._config = {user:{name:'Foo Bar',email:'foo@bar.com'}}
   // internals - extra
   this.visualtree = {}
+  this.visualtreekey = []
 
   //jsonpatch stuff
   this.repository = {}
@@ -31,6 +32,7 @@ var gitjson = function() {
   this.log = lib.log
   this.checkout = lib.checkout
   this.merge = lib.merge
+  this.rebase = lib.rebase
 
   // API - other
   this.config = lib.config

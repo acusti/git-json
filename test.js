@@ -2,43 +2,60 @@ var gitjson = require('./index.js')
 var assert = require('assert')
 var git = gitjson()
 
-  git.init()
-  git.save('mydocument', {foo:'bar', val:2})
-  git.add('mydocument')
-  git.commit('first commit')
+//testing rebase
+git.init()
 
-  git.save('plans', {baz:false})
-  git.add('plans')
-  git.save('mydocument', {foo:'bar',val:4})
-  git.add('mydocument')
-  git.commit('added plans, modified mydocument to val is 4')
+//A
+git.save('mydoc',{foo:'bar'})
+git.add('mydoc')
+git.commit('first commit into master')
 
-  git.branch('test')
-  git.checkout('test')
-  git.save('mydocument',{foo:'bar',val:3})
-  git.add('mydocument')
-  git.commit('added one to val to make it 3')
+//B
+git.save('bigplans',{baz:19})
+git.add('bigplans')
+git.commit('second commit into master')
+
+//W
+git.branch('topic')
+var obj = git.checkout('topic')
+obj.bigplans.baz--
+git.save('bigplans',obj.bigplans)
+git.add('bigplans')
+git.commit('first commit into topic branch bz is 18')
+
+//X
+obj.bigplans.baz--
+git.save('bigplans',obj.bigplans)
+git.add('bigplans')
+git.commit('second commit into topic branch bz is 17')
 
 
-  git.save('mydocument',{foo:'bar',val:3,txt:'hello'})
-  git.add('mydocument')
-  git.commit('Added hello text')
+//Y
+obj.bigplans.baz--
+git.save('bigplans',obj.bigplans)
+git.add('bigplans')
+git.commit('third commit into topic branch bz is 16')
 
-  git.log()
+//C
+var obj = git.checkout('master')
+git.save('anotherdoc',{berry:true,count:0})
+git.add('anotherdoc')
+git.commit('third commit into master')
 
-  var obj = git.checkout('master')
-  console.log(obj)
-  obj.mydocument.val = 99
-  git.save('mydocument',obj.mydocument)
-  git.add('mydocument')
-  git.commit('commit to master val 99')
-  git.log()
-  
-  var obj = git.checkout('b3a2f28d6c385b520f104d420286992c09f52653')
-  console.log(obj)
-  console.log(git)
-  
+//D 
+git.save('anotherdoc',{berry:true,count:1})
+git.add('anotherdoc')
+git.commit('fourth commit into master')
+
 /*
-  git.merge('test')
-  git.log()
+
+A -> B -> C -> D      master
+     \
+      \_ W -> X -> Y  topic
+
 */
+
+git.checkout('topic')
+git.rebase('master')
+git.visual()
+

@@ -76,7 +76,7 @@ Returns the contents at the tip of branchname
 .merge(branchname)
 ==================
 
-Peforms a fast forward merge, non-ff conflictless merge. Supports detached merges as well.
+Peforms a fast forward merge, as well as non-ff conflictless merge. non-ff conflict merge soon.
 
 
 .ancestor(branchname)
@@ -88,7 +88,7 @@ Returns true if current branch tip is upstream of branchname (i.e. "is branchnam
 .rebase(branchname)
 ===================
 
-Rewinds head to tip of branchname and then rewrites / replays through to tip of current branh.
+Rebases current branch onto branchname.
 
 
 ---

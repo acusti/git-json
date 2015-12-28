@@ -41,4 +41,5 @@ test('merge no-fastforward,no conflicts test',function(assert) {
   assert.deepEquals(obj,{ anotherdoc: { x: 42 }, mydocument: { foo: 'bar', user: { name: 'beans' }, val: 99 } })
   console.log("New master:", obj)
   git.log()
+  git.visual()
 })
