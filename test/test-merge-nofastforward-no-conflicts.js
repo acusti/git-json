@@ -4,7 +4,7 @@ var git = gitjson()
 
 test('merge no-fastforward,no conflicts test',function(assert) {
 
-  assert.plan(2)
+  assert.plan(3)
 // this is code largely from the ancestor is not upstream test
   git.init()
   git.save('mydocument', {foo:'bar', val:2})
@@ -38,6 +38,7 @@ test('merge no-fastforward,no conflicts test',function(assert) {
   assert.equals(3, results.reduced.length)
   console.log("results of merge:", results)
   var obj = git.checkout('master') 
+  assert.deepEquals(obj,{ anotherdoc: { x: 42 }, mydocument: { foo: 'bar', user: { name: 'beans' }, val: 99 } })
   console.log("New master:", obj)
   git.log()
 })
