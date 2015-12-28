@@ -28,9 +28,16 @@ test('merge no-fastforward,no conflicts test',function(assert) {
   git.add('mydocument')
   git.add('anotherdoc')
   git.commit('commit to master val 99,anotherdoc')
+// at this point
+//test: { mydocument: { foo: 'bar', val: 99, user: { name: 'beans' } } }
+//HEAD (master): { mydocument: { foo: 'bar', val: 99 }, anotherdoc: { x: 42 } }
+//ancestor: { mydocument: { foo: 'bar', val: 2 } }
+
   var results = git.merge('test')
   assert.deepEqual([],results.conflicts)
   assert.equals(3, results.reduced.length)
   console.log("results of merge:", results)
-
+  var obj = git.checkout('master') 
+  console.log("New master:", obj)
+  git.log()
 })
