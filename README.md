@@ -118,14 +118,15 @@ TODO
 ====
 
 ![Pencil Todo](http://i.imgur.com/7cCiqun.png) git remove  
-![Pencil Todo](http://i.imgur.com/7cCiqun.png) treelib with commit hashes for visualizations  
-![Pencil Todo](http://i.imgur.com/7cCiqun.png) NonFF merge with conflicts  
-![Pencil Todo](http://i.imgur.com/7cCiqun.png) git rebase  
+![Pencil Todo](http://i.imgur.com/7cCiqun.png) NonFF merge with conflicts / rebase with conflicts
+![Pencil Todo](http://i.imgur.com/7cCiqun.png) garbage collection
 
 Recently added 
 ==============
 
 * NonFF merge without conflicts
+* git rebase without conflicts
+* treelib with commit hashes for visualizations  
 
 Thanks
 ======
