@@ -76,8 +76,7 @@ Returns the contents at the tip of branchname
 .merge(branchname)
 ==================
 
-Peforms a fast forward merge  (three way non-ff merge coming).
-Supports detached merges as well.
+Peforms a fast forward merge, non-ff conflictless merge. Supports detached merges as well.
 
 
 .ancestor(branchname)
@@ -106,6 +105,9 @@ Sets the git configuration. Typical use is
 
 Returns the list of all branches and indicates which branch you are on.
 
+##### .visual()
+
+Show a tree-based visual representation of the repository
 
 Contributions
 =============
@@ -117,7 +119,7 @@ TODO
 
 ![Pencil Todo](http://i.imgur.com/7cCiqun.png) git remove  
 ![Pencil Todo](http://i.imgur.com/7cCiqun.png) treelib with commit hashes for visualizations  
-![Pencil Todo](http://i.imgur.com/7cCiqun.png) NonFF merge with conflicts
+![Pencil Todo](http://i.imgur.com/7cCiqun.png) NonFF merge with conflicts  
 ![Pencil Todo](http://i.imgur.com/7cCiqun.png) git rebase  
 
 Recently added 

@@ -11,6 +11,8 @@ var gitjson = function() {
   this.logs = []
   this.branches = {}
   this._config = {user:{name:'Foo Bar',email:'foo@bar.com'}}
+  // internals - extra
+  this.visualtree = {}
 
   //jsonpatch stuff
   this.repository = {}
@@ -34,6 +36,7 @@ var gitjson = function() {
   this.config = lib.config
   this.ancestor = lib.ancestor
   this.walkback = lib.walkback
+  this.visual = lib.visual
 }
 module.exports = exports = function() {
   return new gitjson
