@@ -32,12 +32,13 @@ var git = gitjson()
   git.save('mydocument',obj.mydocument)
   git.add('mydocument')
   git.commit('commit to master val 99')
-process.exit()
   git.log()
-/*
-  assert.equal(false,git.ancestor('test'))
-  assert.equal(true,git.ancestor('master'))
-*/
   
+  var obj = git.checkout('b3a2f28d6c385b520f104d420286992c09f52653')
+  console.log(obj)
+  console.log(git)
+  
+/*
   git.merge('test')
   git.log()
+*/
