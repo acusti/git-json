@@ -1,6 +1,6 @@
 {
   "name": "git-json",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "git-json ========",
   "main": "index.js",
   "directories": {
@@ -11,8 +11,10 @@
     "deep-equal": "^1.0.1",
     "fast-json-patch": "^0.5.4",
     "hashish": "0.0.4",
+    "inherits": "^2.0.1",
     "lodash": "^3.10.1",
     "queuelib": "",
+    "readable-stream": "^2.0.5",
     "treelib": ""
   },
   "devDependencies": {

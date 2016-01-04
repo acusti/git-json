@@ -5,6 +5,8 @@ git-json
 
     var gitjson = require('git-json')
     var git = gitjson()
+
+    git.pipe(process.stdout)
   
     git.init()
     git.save('mydocument',{foo:'bar',val:2})
@@ -118,8 +120,9 @@ TODO
 ====
 
 ![Pencil Todo](http://i.imgur.com/7cCiqun.png) git remove  
-![Pencil Todo](http://i.imgur.com/7cCiqun.png) NonFF merge with conflicts / rebase with conflicts
-![Pencil Todo](http://i.imgur.com/7cCiqun.png) garbage collection
+![Pencil Todo](http://i.imgur.com/7cCiqun.png) NonFF merge with conflicts / rebase with conflicts  
+![Pencil Todo](http://i.imgur.com/7cCiqun.png) garbage collection  
+![Pencil Todo](http://i.imgur.com/7cCiqun.png) multiple parents preservation on merge  
 
 Recently added 
 ==============

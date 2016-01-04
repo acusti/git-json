@@ -1,7 +1,18 @@
+var inherits = require('inherits');
+var Duplex = require('readable-stream').Duplex;
 var lib = require('./lib')
 var treelib = require('treelib')
-var gitjson = function() {
 
+inherits(GitJSON, Duplex);
+
+module.exports = exports = GitJSON
+
+function GitJSON() {
+  if (!(this instanceof GitJSON)) return new GitJSON;
+//  var self = this;
+  Duplex.call(this);
+  this.on('finish', function () {
+  });
   // internals
   this.refs = {}
   this.HEAD = null;
@@ -15,31 +26,35 @@ var gitjson = function() {
   this.visualtree = {}
   this.visualtreekey = []
 
-  //jsonpatch stuff
   this.repository = {}
   this.staging = {}
   this.working = {}
-
-  // API
-  this.init = lib.init  
-  this.save = lib.save
-  this.add = lib.add
-  this.delete = lib.delete
-  this.remove = lib.remove
-  this.commit = lib.commit
-  this.merge = lib.merge
-  this.branch = lib.branch
-  this.log = lib.log
-  this.checkout = lib.checkout
-  this.merge = lib.merge
-  this.rebase = lib.rebase
-
-  // API - other
-  this.config = lib.config
-  this.ancestor = lib.ancestor
-  this.walkback = lib.walkback
-  this.visual = lib.visual
 }
-module.exports = exports = function() {
-  return new gitjson
-}
+
+// API
+GitJSON.prototype.init = lib.init
+GitJSON.prototype.save = lib.save
+GitJSON.prototype.add = lib.add
+GitJSON.prototype.delete = lib.delete
+GitJSON.prototype.remove = lib.remove
+GitJSON.prototype.commit = lib.commit
+GitJSON.prototype.merge = lib.merge
+GitJSON.prototype.branch = lib.branch
+GitJSON.prototype.log = lib.log
+GitJSON.prototype.checkout = lib.checkout
+GitJSON.prototype.merge = lib.merge
+GitJSON.prototype.rebase = lib.rebase
+
+
+// API - other
+GitJSON.prototype.config = lib.config
+GitJSON.prototype.ancestor = lib.ancestor
+GitJSON.prototype.walkback = lib.walkback
+GitJSON.prototype.visual = lib.visual
+
+
+GitJSON.prototype._write = function (buf, enc, next) {
+};
+
+GitJSON.prototype._read = function () {
+};
